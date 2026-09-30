@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EMI Calculator"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan Amount (₹)"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etLoanAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter loan amount"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Annual Interest Rate (%)"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:id="@+id/etInterestRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter interest rate"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan Tenure (Years)"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:id="@+id/etTenure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter tenure"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CALCULATE EMI"
+            android:layout_marginTop="25dp" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESET" />
+
+        <TextView
+            android:id="@+id/tvEMI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monthly EMI: ₹0.00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/tvInterest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Interest: ₹0.00"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/tvTotalPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Payment: ₹0.00"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="15dp" />
+
+    </LinearLayout>
+
+</ScrollView>
